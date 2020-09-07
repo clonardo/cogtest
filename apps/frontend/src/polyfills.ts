@@ -5,3 +5,6 @@
  */
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
+
+// globals
+window.__DEV__ = process.env.NODE_ENV !== 'production';

@@ -23,11 +23,19 @@
   },
   "projects": {
     "frontend": {
-      "tags": []
+      "tags": [],
+      "implicitDependencies": ["shared-utils"]
     },
     "frontend-e2e": {
       "tags": [],
       "implicitDependencies": ["frontend"]
+    },
+    "backend": {
+      "tags": [],
+      "implicitDependencies": ["shared-utils"]
+    },
+    "shared-utils": {
+      "tags": []
     }
   }
 }

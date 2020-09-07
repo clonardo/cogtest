@@ -1,0 +1,25 @@
+@import './variables';
+@import './libs';
+
+.cogtest-loading-spinner {
+  height: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+
+  // center the spinner in container
+  .ant-spin.ant-spin-spinning {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+// layout for main page
+.site-layout-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 280px;
+}
