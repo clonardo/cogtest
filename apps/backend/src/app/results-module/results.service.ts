@@ -1,9 +1,4 @@
 import {
-  Controller,
-  Post,
-  Body,
-  UsePipes,
-  ValidationPipe,
   Injectable,
   Logger,
   Inject,
@@ -19,9 +14,6 @@ import { RunEntity, ResultEntity } from '../entities';
 @Injectable()
 export class ResultsService {
   constructor(
-    @Inject(Logger) private readonly logger: LoggerService,
-    @InjectRepository(ResultEntity)
-    private resultsRepo: Repository<ResultEntity>,
     @InjectRepository(RunEntity)
     private runsRepo: Repository<RunEntity>
   ) {}

@@ -129,7 +129,7 @@
             "main": "apps/backend/src/main.ts",
             "tsConfig": "apps/backend/tsconfig.app.json",
             "assets": ["apps/backend/src/assets"],
-            "maxWorkers": 2,
+            "maxWorkers": 1,
             "showCircularDependencies": false
           },
           "configurations": {
@@ -147,6 +147,14 @@
             "development": {
               "inspect": false
             }
+          }
+        },
+        "debug": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "backend:build",
+            "inspect": true,
+            "port": 7769
           }
         },
         "serve": {
